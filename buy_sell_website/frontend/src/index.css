@@ -1,0 +1,159 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
+
+body {
+    background-color: #f3f3f3;
+    color: #111;
+    font-family: 'Arial', sans-serif;
+    padding-top: 70px;
+    margin: 0;
+}
+
+
+nav {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px; 
+  padding: 0;
+  margin: 0;
+}
+
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  transition: background 0.3s, color 0.3s;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background: #0ef; 
+  color: black;
+}
+
+
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column; 
+      background: rgba(0, 0, 0, 0.9);
+      position: absolute;
+      top: 50px;
+      left: 0;
+      right: 0;
+      display: none; 
+  }
+
+  nav ul.show {
+      display: flex; 
+  }
+
+  .menu-toggle {
+      display: block;
+      cursor: pointer;
+      font-size: 24px;
+      color: white;
+  }
+}
+
+
+
+button, a, input, select, .item-card, .floating-cart {
+    cursor: pointer;
+}
+
+.form-container {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 50px auto;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.form-control {
+    margin-bottom: 15px;
+}
+
+
+button {
+    background-color: #ff9900;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e68a00;
+    transform: scale(1.05);
+}
+
+
+.item-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.item-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.floating-cart {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff6b6b;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s;
+}
+
+.floating-cart:hover {
+    transform: scale(1.15);
+    background-color: #ffa502;
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    .floating-cart {
+        bottom: 15px;
+        right: 15px;
+    }
+}

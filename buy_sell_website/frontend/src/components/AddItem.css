@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.add-item-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+
+.success-msg, .error-msg {
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.success-msg {
+    background-color: #eafaf1;
+    color: #27ae60;
+    border: 1px solid #27ae60;
+}
+
+.error-msg {
+    background-color: #fdecea;
+    color: #c0392b;
+    border: 1px solid #c0392b;
+}
+
+
+.add-item-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.add-item-form input,
+.add-item-form textarea,
+.add-item-form select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.add-item-form input:focus,
+.add-item-form textarea:focus,
+.add-item-form select:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+
+.add-btn {
+    background-color: #27ae60;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.add-btn:hover {
+    background-color: #1e8449;
+    transform: scale(1.05);
+}
+
+
+@media (max-width: 600px) {
+    .add-item-container {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .add-btn {
+        padding: 10px;
+    }
+}
