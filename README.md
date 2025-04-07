@@ -4,7 +4,8 @@ Welcome to the Buy-Sell Website designed exclusively for the IIIT Community. Thi
 
 
 Project Structure
-<roll_no>/
+```
+<buy_sell_IIIT>/
 ├── backend/
 │   ├── middleware/
 │   ├── models/
@@ -24,6 +25,7 @@ Project Structure
 │   ├── vite.config.js
 │   └── README.md
 └── README.md
+```
 
 
 Tech Stack
@@ -32,7 +34,7 @@ Tech Stack
     Backend: Node.js, Express.js, MongoDB (Mongoose ODM)
     Authentication: JSON Web Tokens (JWT), bcrypt.js 
     Security: Google reCAPTCHA, CAS Authentication (Bonus)
-    Database: local MongoDB instance)
+    Database: local MongoDB instance
 
 Installation & Setup
 

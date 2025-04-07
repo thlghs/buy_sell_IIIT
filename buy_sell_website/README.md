@@ -2,9 +2,9 @@ Buy-Sell Website @ IIITH
 
 Welcome to the Buy-Sell Website designed exclusively for the IIIT Community. This MERN stack application allows all members of IIIT to engage in seamless buying and selling of items within the campus, eliminating the need for third-party platforms and avoiding additional taxes imposed by external services.
 
-
+```
 Project Structure
-<roll_no>/
+<buy-sell-IIITH>/
 ├── backend/
 │   ├── middleware/
 │   ├── models/
@@ -24,7 +24,7 @@ Project Structure
 │   ├── vite.config.js
 │   └── README.md
 └── README.md
-
+```
 
 Tech Stack
 
